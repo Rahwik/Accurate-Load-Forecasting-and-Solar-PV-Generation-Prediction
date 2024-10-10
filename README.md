@@ -1,4 +1,4 @@
-Certainly! Let’s provide an even more detailed guide for creating a comprehensive **Energy Load Forecasting and Solar PV Generation Prediction** web application using **Flask** and **machine learning**. I'll walk through each step, from the directory structure to dataset generation, model building, training, and implementing the Flask web app, adding more functionality and advanced improvements.
+**Energy Load Forecasting and Solar PV Generation Prediction** web application using **Flask** and **machine learning**. I'll walk through each step, from the directory structure to dataset generation, model building, training, and implementing the Flask web app, adding more functionality and advanced improvements.
 
 ### Overview
 
