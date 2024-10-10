@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Prediction Results</h1>
+
+    <!-- Display the load forecasting prediction -->
+    <h3>Predicted Load Consumption:</h3>
+    <p>{{ load_prediction }} kWh</p>
+
+    <!-- Display the solar PV generation prediction -->
+    <h3>Predicted Solar PV Generation:</h3>
+    <p>{{ solar_prediction }} kW</p>
+
+    <br><a href="/">Go Back</a>
+</body>
+</html>

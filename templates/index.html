@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <h1>Energy Load and Solar PV Generation Prediction</h1>
+
+    <form action="/predict" method="POST">
+        <!-- Load Forecasting Inputs -->
+        <h3>Load Forecasting</h3>
+        <label for="hour">Hour (0-23):</label>
+        <input type="number" id="hour" name="hour" min="0" max="23" required><br>
+
+        <label for="day_of_week">Day of Week (0 = Sunday, 6 = Saturday):</label>
+        <input type="number" id="day_of_week" name="day_of_week" min="0" max="6" required><br>
+
+        <label for="month">Month (1-12):</label>
+        <input type="number" id="month" name="month" min="1" max="12" required><br><br>
+
+        <!-- Solar PV Generation Inputs -->
+        <h3>Solar PV Generation</h3>
+        <label for="day_of_year">Day of Year (1-365):</label>
+        <input type="number" id="day_of_year" name="day_of_year" min="1" max="365" required><br>
+
+        <label for="cloud_cover">Cloud Cover (%):</label>
+        <input type="number" id="cloud_cover" name="cloud_cover" min="0" max="100" step="0.1" required><br>
+
+        <label for="temperature">Temperature (°C):</label>
+        <input type="number" id="temperature" name="temperature" min="0" max="50" step="0.1" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+
+</html>
